@@ -20,8 +20,10 @@ public class Tablet extends DispositivoTecnologico {
 		this.accesoriosIncorporados = accesoriosIncorporados;
 	}
 
-	public Tablet() {
-		throw new UnsupportedOperationException();
+	public Tablet(String marca, String modelo,String memoriaRam, String memoriaAlmacenamiento,String procesador, int precio, int cantidadStock, int anoFabricacion, String resolucionPantalla, String accesoriosIncorporados) {
+		super(marca, modelo, memoriaRam, memoriaAlmacenamiento, procesador, precio, cantidadStock, anoFabricacion);
+		this.resolucionPantalla = resolucionPantalla;
+		this.accesoriosIncorporados = accesoriosIncorporados;
 	}
 
 	public void getTipo() {

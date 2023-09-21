@@ -29,8 +29,11 @@ public class Notebook extends DispositivoTecnologico {
 		this.bateria = bateria;
 	}
 
-	public Notebook() {
-		throw new UnsupportedOperationException();
+	public Notebook(String marca, String modelo,String memoriaRam, String memoriaAlmacenamiento,String procesador, int precio, int cantidadStock, int anoFabricacion, String resolucionPantalla, String tipoTeclado, String bateria) {
+		super(marca, modelo, memoriaRam, memoriaAlmacenamiento, procesador, precio, cantidadStock, anoFabricacion);
+		this.resolucionPantalla = resolucionPantalla;
+		this.tipoTeclado = tipoTeclado;
+		this.bateria = bateria;
 	}
 
 	public void getTipo() {

@@ -85,7 +85,15 @@ public abstract class DispositivoTecnologico {
 
 	public abstract void getTipo();
 
-	public DispositivoTecnologico() {
-		throw new UnsupportedOperationException();
+	public DispositivoTecnologico(String marca, String modelo, String memoriaRam, String memoriaAlmacenamiento,
+			String procesador, int precio, int cantidadStock, int anoFabricacion) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.memoriaRam = memoriaRam;
+		this.memoriaAlmacenamiento = memoriaAlmacenamiento;
+		this.procesador = procesador;
+		this.precio = precio;
+		this.cantidadStock = cantidadStock;
+		this.anoFabricacion = anoFabricacion;
 	}
 }

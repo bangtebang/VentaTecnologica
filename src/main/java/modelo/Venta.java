@@ -16,7 +16,8 @@ public class Venta {
 		this.fechaCompra = fechaCompra;
 	}
 
-	public Venta() {
-		throw new UnsupportedOperationException();
+	public Venta(String fechaCompra, Cliente cliente) {
+		this.fechaCompra = fechaCompra;
+		this.cliente = cliente;
 	}
 }
