@@ -55,8 +55,8 @@ public abstract class DispositivoTecnologico {
 		this.procesador = procesador;
 	}
 
-	public String getAnoFabricacion() {
-		throw new UnsupportedOperationException();
+	public int getAnoFabricacion() {
+		return this.anoFabricacion;
 	}
 
 	public void setAnoFabricacion(String anoFabricacion) {
@@ -95,5 +95,9 @@ public abstract class DispositivoTecnologico {
 		this.precio = precio;
 		this.cantidadStock = cantidadStock;
 		this.anoFabricacion = anoFabricacion;
+	}
+
+	public String getDescripcion() {
+		return getTipo() + " " + this.marca + " " + this.modelo;
 	}
 }

@@ -30,10 +30,9 @@ public class Pantalla {
 		this.ano = ano;
 	}
 
-	public Pantalla(String marca, String modelo, int ano, Computador computador) {
+	public Pantalla(String marca, String modelo, int ano) {
 		this.marca = marca;
 		this.modelo = modelo;
 		this.ano = ano;
-		this.computador = computador;
 	}
 }

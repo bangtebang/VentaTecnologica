@@ -1,0 +1,4 @@
+marca, modelo, memoriaRam, memoriaAlmacenamiento, procesador, precio, cantidadStock, anoFabricacion
+MarcaX,ModeloX,8GB,600gb,Intel i5,256,14,2023
+MarcaY,ModeloY,8GB,600gb,Intel i5,256,14,2023
+MarcaZ,ModeloZ,8GB,600gb,Intel i5,256,15,2023

@@ -1,8 +1,6 @@
 package modelo;
 
 import java.util.ArrayList;
-import modelo.DispositivoTecnologico;
-import modelo.Cliente;
 
 public class TiendaTecnologica {
 	private ArrayList<Venta> ventas = new ArrayList<Venta>();
@@ -39,12 +37,16 @@ public class TiendaTecnologica {
 		}
 		clientes.add(cliente);
 	}
-	public void realizarVenta(DispositivoTecnologico dispositivoTecnologico, int compra,Venta venta) {
-		if (dispositivoTecnologico.getCantidadStock() < compra) {
-			System.out.println("No hay suficiente stock");
-			return;
+	public void realizarVenta(Venta venta,ArrayList<DispositivoTecnologico> dispositivosTecnologicos,int compra) {
+		for (DispositivoTecnologico d : dispositivosTecnologicos) {
+			if (d.getCantidadStock() < compra) {
+				System.out.println("No hay suficiente stock");
+				return;
+			}
 		}
-		dispositivoTecnologico.setCantidadStock(dispositivoTecnologico.getCantidadStock() - compra);
+		for (DispositivoTecnologico d : dispositivosTecnologicos) {
+			d.setCantidadStock(d.getCantidadStock() - compra);
+		}
 		ventas.add(venta);
 	}
 	public void obtenerInformacionDispositivoTecnologico(DispositivoTecnologico dispositivoTecnologico) {
@@ -57,5 +59,17 @@ public class TiendaTecnologica {
 		System.out.println("Cantidad en stock: " + dispositivoTecnologico.getCantidadStock());
 		System.out.println("Año de fabricación: " + dispositivoTecnologico.getAnoFabricacion());
 		System.out.println("Tipo: " + dispositivoTecnologico.getTipo());
+	}
+
+	public ArrayList<Cliente> getClientes() {
+		return this.clientes;
+	}
+
+	public ArrayList<DispositivoTecnologico> getCatalogo() {
+		return this.dispositivosTecnologicos;
+	}
+
+	public ArrayList<Venta> getVentas() {
+		return this.ventas;
 	}
 }

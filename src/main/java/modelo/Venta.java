@@ -1,7 +1,6 @@
 package modelo;
 
 import java.util.ArrayList;
-import modelo.DispositivoTecnologico;
 
 public class Venta {
 	private int compra;
@@ -22,5 +21,16 @@ public class Venta {
 		this.cliente = cliente;
 		this.dispositivosTecnologicos = dispositivosTecnologicos;
 		this.compra = compra;
+	}
+
+	public Cliente getCliente() {
+		return this.cliente;
+	}
+
+	public ArrayList<DispositivoTecnologico> getDispositivoTecnologico(){
+		return this.dispositivosTecnologicos;
+	}
+	public int getCompra(){
+		return this.compra;
 	}
 }
