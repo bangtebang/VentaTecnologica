@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import modelo.DispositivoTecnologico;
 
 public class Venta {
+	private int compra;
 	private String fechaCompra;
 	private ArrayList<DispositivoTecnologico> dispositivosTecnologicos = new ArrayList<DispositivoTecnologico>();
 	private Cliente cliente;
@@ -16,8 +17,10 @@ public class Venta {
 		this.fechaCompra = fechaCompra;
 	}
 
-	public Venta(String fechaCompra, Cliente cliente) {
+	public Venta(String fechaCompra, Cliente cliente, ArrayList<DispositivoTecnologico> dispositivosTecnologicos,int compra) {
 		this.fechaCompra = fechaCompra;
 		this.cliente = cliente;
+		this.dispositivosTecnologicos = dispositivosTecnologicos;
+		this.compra = compra;
 	}
 }

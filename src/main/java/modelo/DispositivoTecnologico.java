@@ -83,7 +83,7 @@ public abstract class DispositivoTecnologico {
 		this.anoFabricacion = anoFabricacion;
 	}
 
-	public abstract void getTipo();
+	public abstract String getTipo();
 
 	public DispositivoTecnologico(String marca, String modelo, String memoriaRam, String memoriaAlmacenamiento,
 			String procesador, int precio, int cantidadStock, int anoFabricacion) {

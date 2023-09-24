@@ -36,7 +36,7 @@ public class Notebook extends DispositivoTecnologico {
 		this.bateria = bateria;
 	}
 
-	public void getTipo() {
-		throw new UnsupportedOperationException();
+	public String getTipo() {
+		return "Notebook";
 	}
 }

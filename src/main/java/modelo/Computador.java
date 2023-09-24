@@ -38,7 +38,7 @@ public class Computador extends DispositivoTecnologico {
 		this.pantalla = pantalla;
 	}
 
-	public void getTipo() {
-		throw new UnsupportedOperationException();
+	public String getTipo() {
+		return "Computador";
 	}
 }

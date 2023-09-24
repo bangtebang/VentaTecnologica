@@ -26,7 +26,7 @@ public class Tablet extends DispositivoTecnologico {
 		this.accesoriosIncorporados = accesoriosIncorporados;
 	}
 
-	public void getTipo() {
-		throw new UnsupportedOperationException();
+	public String getTipo() {
+		return "Tablet";
 	}
 }
